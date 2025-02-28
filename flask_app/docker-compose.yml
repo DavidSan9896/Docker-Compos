@@ -1,0 +1,27 @@
+version: '3.8'
+
+services:
+  db:
+    image: postgres:13
+    container_name: students_db
+    environment:
+      POSTGRES_USER: myuser
+      POSTGRES_PASSWORD: 9896
+      POSTGRES_DB: students_db
+    ports:
+      - "5432:5432"
+    volumes:
+      - db_data:/var/lib/postgresql/data
+
+  web:
+    build: .
+    container_name: flask_app
+    ports:
+      - "5000:5000"
+    depends_on:
+      - db
+    environment:
+      DATABASE_URL: postgresql://myuser:9896@db/students_db
+
+volumes:
+  db_data:

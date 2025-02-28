@@ -1,0 +1,32 @@
+[
+    {
+        "id": 1,
+        "nombre": "David Cubillos",
+        "edad": 22,
+        "carrera": "Ingenieria "
+    },
+    {
+        "id": 2,
+        "nombre": "Pedro Mendez",
+        "edad": 35,
+        "carrera": "Administracion"
+    },
+    {
+        "id": 3,
+        "nombre": "Monica Arrieta",
+        "edad": 20,
+        "carrera": "Matematicas "
+    },
+    {
+        "id": 4,
+        "nombre": "Martin Chiquillo",
+        "edad": 24,
+        "carrera": "Ingenieria "
+    },
+    {
+        "id": 5,
+        "nombre": "Juan Gomez",
+        "edad": 18,
+        "carrera": "Veterinaria"
+    }
+]
